@@ -20,8 +20,7 @@
       <el-container>
         <el-header style="text-align: right">
           <el-dropdown>
-            <i class="el-icon-setting" style="margin-right: 15px"></i>
-            <span>Jeff</span>
+            <el-button type="primary" style="margin-right: 15px">个人中心 <i class="el-icon-user-solid"></i></el-button>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item>个人信息</el-dropdown-item>
               <el-dropdown-item @click.prevent.native="logout">退出登录</el-dropdown-item>
