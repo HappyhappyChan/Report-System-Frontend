@@ -9,14 +9,14 @@
     <!--表格渲染-->
     <el-table ref="table" v-loading="crud.loading" :data="crud.data" style="width: 100%;" @selection-change="crud.selectionChangeHandler">
       <el-table-column type="selection" width="55" />
-      <el-table-column prop="projNum" label="报告号" />
-      <el-table-column prop="projName" label="项目名称" />
-      <el-table-column prop="filePath" label="底稿路径" />
-      <el-table-column prop="module" label="对应模块" />
-      <el-table-column prop="subModule" label="对应子模块" />
-      <el-table-column prop="auditDept" label="被审计部门" />
-      <el-table-column prop="relSys" label="涉及系统" />
-      <el-table-column prop="probNum" label="缺陷数量" />
+      <el-table-column prop="projNum" label="报告号" sortable/>
+      <el-table-column prop="projName" label="项目名称"  sortable/>
+      <el-table-column prop="filePath" label="底稿路径"  sortable/>
+      <el-table-column prop="module" label="对应模块" sortable/>
+      <el-table-column prop="subModule" label="对应子模块" sortable/>
+      <el-table-column prop="auditDept" label="被审计部门" sortable/>
+      <el-table-column prop="relSys" label="涉及系统" sortable/>
+      <el-table-column prop="probNum" label="缺陷数量" sortable/>
       <el-table-column prop="comments" label="备注" />
       <!-- <el-table-column prop="comments" label="排序">
         <template slot-scope="scope">
@@ -33,10 +33,10 @@
           />
         </template>
       </el-table-column> -->
-      <el-table-column prop="createDate" label="创建日期" />
-      <el-table-column prop="finishDate" label="完成日期" />
-      <el-table-column prop="reportDate" label="报告日期" />
-      <el-table-column prop="reporterName" label="报告人" />
+      <el-table-column prop="createDate" label="创建日期" sortable/>
+      <el-table-column prop="finishDate" label="完成日期" sortable/>
+      <el-table-column prop="reportDate" label="报告日期" sortable/>
+      <el-table-column prop="reporterName" label="报告人" sortable/>
       <!--   编辑与删除   -->
       <!-- <el-table-column
         v-if="checkPer(['admin','report:edit','report:del'])" -->
